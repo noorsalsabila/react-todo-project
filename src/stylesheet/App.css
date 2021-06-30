@@ -9,7 +9,6 @@ body{
     line-height: 1.4;
     color:#444;
     background: #fff;
-    height: 100vh;
 }
 
 .container{
@@ -76,8 +75,8 @@ body{
 }
 
 .active-link{
-    color: orange;
-    text-decoration: underline;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.452);
 }
 
 /* sidebar Nav*/
@@ -100,7 +99,7 @@ body{
     list-style: none;
     position: fixed;
     top: 0;
-    background: darkcyan;
+    background: #f1f1f1;
     left: 0;
     bottom: 0;
     height: 100vh;
@@ -108,6 +107,7 @@ body{
     overflow: hidden;
     max-width: 290px;
     z-index: 9;
+    opacity: 60%;
 }
 
 .menuNav.showMenu{
@@ -118,9 +118,14 @@ a{
     display: block;
     padding: 10px 40px;
     text-decoration: none;
-    color: #3fffd2;
+    color: #000;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+li a:hover{
+    background-color: #555;
+    color: rgb(82, 78, 78);
 }
 
 .menuNav li:first-child{

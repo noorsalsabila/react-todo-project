@@ -30,8 +30,8 @@ const ToDoItem = props => {
     }
     const {id, title, completed} = props.todo
 
-    let viewMode = {}
-    let editMode = {}
+    let viewMode = {display:"inline"}
+    let editMode = {display:"inline"}
 
     if(editing){
         viewMode.display = "none"
